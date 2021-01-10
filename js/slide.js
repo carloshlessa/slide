@@ -154,12 +154,12 @@ export class Slide {
         this.slidesConfig();
         this.addResizeEvent();
         this.changeSlide(0);
-        this.addControl();
+
         return this;
     }
 }
 
-export class SlideNav extends Slide {
+export default class SlideNav extends Slide {
     constructor(slide, wrapper) {
         super(slide, wrapper);
         this.bindControlEvents();
